@@ -13,14 +13,18 @@
                     "giocare a pallone",
                     "uccidere flanders"
                     ],
-               
+
+               inputUser: "",
                     
                
             }
         },
         methods: {
             
-    
+            inputButton () {
+                this.todoList.push(this.inputUser)
+            }
+            
            
     
            

@@ -23,7 +23,11 @@
             <ul class="text-center list-group">
                 <li class="list-group-item" v-for="element, i in todoList" >{{element}}</li>
             </ul>
-            
+            <div class="input-group mb-3">
+                <button @click="inputButton()" class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                <input v-model="inputUser" style="border-color: crimson;"  type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+            <p>Il messaggio è: {{ inputUser }}</p>
             
         </div>
 
