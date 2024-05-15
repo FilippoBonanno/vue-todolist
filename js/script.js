@@ -15,6 +15,7 @@
                     ],
 
                inputUser: "",
+               
                     
                
             }
@@ -23,7 +24,13 @@
             
             inputButton () {
                 this.todoList.push(this.inputUser)
-            }
+            },
+
+            clearTodo(index) {
+                console.log("haiCliccato")
+                this.todoList.splice(index, 1);
+                
+            },
             
            
     
